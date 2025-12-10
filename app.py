@@ -6,8 +6,8 @@ from HD_RL_Tracker import process_text
 app = Flask(__name__)
 
 # Upload folder for the text file
-app.config['UPLOAD_FOLDER'] = './uploads'
-app.config['CSV_FOLDER'] = './static/csv'
+app.config['UPLOAD_FOLDER'] = '/tmp/uploads'
+app.config['CSV_FOLDER'] = '/tmp/csv'
 
 # Ensure the upload folder exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
